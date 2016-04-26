@@ -54,7 +54,7 @@ public class Main {
             double range = Estadistica.getRange(xArrayList, yArrayList, beta0, beta1, x);
             double tailArea = Estadistica.getTailArea(r, xArrayList);
 
-            String resultado = "r:" + r;
+            String resultado = "eduardo";
             //String resultado = "r:"+r + ", r^2:"+ r*r + ", tailArea:"+ tailArea + ", beta0:"+beta0 +"beta1:"+beta1+"yk:"+y+"Range:"+range+"UPI:"+(y+range)+"LPI:"+(y-range);
 
             Map<String, Object> atributes = new HashMap<>();
