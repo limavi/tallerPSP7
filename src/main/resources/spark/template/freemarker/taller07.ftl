@@ -14,7 +14,6 @@ th, td {
 <body>
 <h2> Taller #7 </h2>
 
-${Test1}
 
 
 </body>
