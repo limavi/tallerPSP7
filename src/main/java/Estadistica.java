@@ -696,4 +696,22 @@ public class Estadistica {
     }
     //End
 
+    public static String calculoPrograma7(ArrayList<Double> xArrayList, ArrayList<Double> yArrayList){
+        double xAverage = Estadistica.getAverage(xArrayList);
+        double yAverage = Estadistica.getAverage(yArrayList);
+
+        double beta1 = Estadistica.calBeta1(xArrayList,yArrayList,xAverage,yAverage);
+        double beta0 = Estadistica.calBeta0(beta1,xAverage,yAverage);
+        double r = Estadistica.calR(xArrayList,yArrayList);
+
+        double x = 247.88;
+        double y = beta0 + beta1 * x;
+        double range = Estadistica.getRange(xArrayList, yArrayList, beta0, beta1, x);
+        double tailArea = Estadistica.getTailArea(r, xArrayList);
+
+
+        String resultado = "r:"+r + ",  r^2:"+ r*r + ",  tailArea:"+ tailArea + ",  beta0:"+beta0 +"  beta1:"+beta1+",  yk:"+y+",  Range:"+range+",  UPI:"+(y+range)+",  LPI:"+(y-range);
+        return  resultado;
+    }
+
 }
