@@ -43,10 +43,16 @@ public class Main {
             ArrayList<Double> yArrayList = new ArrayList<Double>(ActualAddedandModifiedSize);
 
             String resultadoTest1= Estadistica.calculoPrograma7(EstimatedProxySize,ActualAddedandModifiedSize);
-            
+            String resultadoTest2= Estadistica.calculoPrograma7(EstimatedProxySize,ActualDevelopmentHours);
+            //String resultadoTest3= Estadistica.calculoPrograma7(EstimatedProxySize,ActualAddedandModifiedSize);
+            //String resultadoTest4= Estadistica.calculoPrograma7(EstimatedProxySize,ActualDevelopmentHours);
+
 
             Map<String, Object> atributes = new HashMap<>();
             atributes.put("test1", resultadoTest1);
+            atributes.put("test2", resultadoTest2);
+            //atributes.put("test3", resultadoTest3);
+            //atributes.put("test4", resultadoTest4);
             return new ModelAndView(atributes, "taller07.ftl");
 
         }, new FreeMarkerEngine());

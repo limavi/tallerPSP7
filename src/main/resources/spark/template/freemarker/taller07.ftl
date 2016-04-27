@@ -14,7 +14,12 @@ th, td {
 <body>
 <h2> Taller #7 </h2>
 
+<h4>Test1 </h4>
 ${test1}
+
+<h4>Test2 </h4>
+${test2}
+
 
 </body>
 </html>
