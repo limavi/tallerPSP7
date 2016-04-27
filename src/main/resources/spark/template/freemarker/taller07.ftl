@@ -19,6 +19,10 @@ th, td {
         <td>Resultado</td>
     </tr>
     <tr>
+        <td>Test 1</td>
+        <td>${test1?html?replace(',', '<br>')}</td>
+    </tr>
+    <tr>
         <td>Test 2</td>
         <td>${test2?html?replace(',', '<br>')}</td>
     </tr>
@@ -28,10 +32,6 @@ th, td {
     </tr>
     <tr>
         <td>Test 4</td>
-        <td>${test1?html?replace(',', '<br>')}</td>
-    </tr>
-    <tr>
-        <td>Test 4</td>
-        <td>${test1?html?replace(',', '<br>')}</td>
+        <td>${test4?html?replace(',', '<br>')}</td>
     </tr>
 </table>
