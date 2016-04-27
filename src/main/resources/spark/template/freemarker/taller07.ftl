@@ -18,14 +18,13 @@ th, td {
 ${test1?html?replace(',', '<br>')}
 ogot
 <h4>Test2 </h4>
-${test2}
+${test2?html?replace(',', '<br>')}
 
 <h4>Test3 </h4>
-${test3}
+${test3?html?replace(',', '<br>')}
 
 <h4>Test4 </h4>
-${test4}
-
+${test4?html?replace(',', '<br>')}
 
 </body>
 </html>
