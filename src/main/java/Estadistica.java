@@ -704,7 +704,7 @@ public class Estadistica {
         double beta0 = Estadistica.calBeta0(beta1,xAverage,yAverage);
         double r = Estadistica.calR(xArrayList,yArrayList);
 
-        double x = 247.88;
+        double x =386; // 247.88;
         double y = beta0 + beta1 * x;
         double range = Estadistica.getRange(xArrayList, yArrayList, beta0, beta1, x);
         double tailArea = Estadistica.getTailArea(r, xArrayList);
