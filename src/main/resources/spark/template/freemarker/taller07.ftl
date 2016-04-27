@@ -13,6 +13,16 @@ th, td {
 </head>
 <body>
 <h2> Taller #7 </h2>
+<table>
+    <tr>
+        <td>Test</td>
+        <td>Tesultado</td>
+    </tr>
+    <tr>
+        <td>Test 1</td>
+        <td>${test1?html?replace(',', '<br>')}</td>
+    </tr>
+</table>
 
 <h4>Test1 </h4>
 ${test1?html?replace(',', '<br>')}
