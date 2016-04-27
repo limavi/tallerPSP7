@@ -20,6 +20,12 @@ ${test1}
 <h4>Test2 </h4>
 ${test2}
 
+<h4>Test3 </h4>
+${test3}
+
+<h4>Test4 </h4>
+${test4}
+
 
 </body>
 </html>
