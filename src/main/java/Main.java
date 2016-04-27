@@ -43,10 +43,10 @@ public class Main {
             ArrayList<Double> ActualAddedandModifiedSizeLili = new ArrayList<Double>(Arrays.asList(0.0, 324.0, 566.0,41.0));
             ArrayList<Double> ActualDevelopmentHoursLili = new ArrayList<Double>(Arrays.asList(5.77,3.77,8.03,4.0));
 
-            String resultadoTest1= Estadistica.calculoPrograma7(EstimatedProxySize,ActualAddedandModifiedSize);
-            String resultadoTest2= Estadistica.calculoPrograma7(EstimatedProxySize,ActualDevelopmentHours);
-            String resultadoTest3= Estadistica.calculoPrograma7(EstimatedProxySizeLili,ActualAddedandModifiedSizeLili);
-            String resultadoTest4= Estadistica.calculoPrograma7(EstimatedProxySizeLili,ActualDevelopmentHoursLili);
+            String resultadoTest1= Estadistica.calculoPrograma7(EstimatedProxySize,ActualAddedandModifiedSize,386.0);
+            String resultadoTest2= Estadistica.calculoPrograma7(EstimatedProxySize,ActualDevelopmentHours, 386.0);
+            String resultadoTest3= Estadistica.calculoPrograma7(EstimatedProxySizeLili,ActualAddedandModifiedSizeLili, 345.0);
+            String resultadoTest4= Estadistica.calculoPrograma7(EstimatedProxySizeLili,ActualDevelopmentHoursLili, 345.0);
 
 
             Map<String, Object> atributes = new HashMap<>();

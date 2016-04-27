@@ -124,7 +124,7 @@ public class Estadistica {
     }
 
     /**
-     * Metodo calcular el valor getTailArea
+     * Metodo calcular el valor getTailArea - significancia
      * param  un valor double y una lista de valores
      * @return el valor getTailArea
      */
@@ -235,15 +235,13 @@ public class Estadistica {
      * param  dos listas de valores
      * @return un string con los resultados solicitados.
      */
-    public static String calculoPrograma7(ArrayList<Double> xArrayList, ArrayList<Double> yArrayList){
+    public static String calculoPrograma7(ArrayList<Double> xArrayList, ArrayList<Double> yArrayList, double x){
         double xAverage = Estadistica.getAverage(xArrayList);
         double yAverage = Estadistica.getAverage(yArrayList);
 
         double beta1 = Estadistica.calBeta1(xArrayList,yArrayList,xAverage,yAverage);
         double beta0 = Estadistica.calBeta0(beta1,xAverage,yAverage);
         double r = Estadistica.calR(xArrayList,yArrayList);
-
-        double x =386; // 247.88;
         double y = beta0 + beta1 * x;
         double range = Estadistica.getRange(xArrayList, yArrayList, beta0, beta1, x);
         double tailArea = Estadistica.getTailArea(r, xArrayList);
