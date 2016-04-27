@@ -16,25 +16,22 @@ th, td {
 <table>
     <tr>
         <td>Test</td>
-        <td>Tesultado</td>
+        <td>Resultado</td>
     </tr>
     <tr>
-        <td>Test 1</td>
+        <td>Test 2</td>
+        <td>${test2?html?replace(',', '<br>')}</td>
+    </tr>
+    <tr>
+        <td>Test 3</td>
+        <td>${test3?html?replace(',', '<br>')}</td>
+    </tr>
+    <tr>
+        <td>Test 4</td>
+        <td>${test1?html?replace(',', '<br>')}</td>
+    </tr>
+    <tr>
+        <td>Test 4</td>
         <td>${test1?html?replace(',', '<br>')}</td>
     </tr>
 </table>
-
-<h4>Test1 </h4>
-${test1?html?replace(',', '<br>')}
-ogot
-<h4>Test2 </h4>
-${test2?html?replace(',', '<br>')}
-
-<h4>Test3 </h4>
-${test3?html?replace(',', '<br>')}
-
-<h4>Test4 </h4>
-${test4?html?replace(',', '<br>')}
-
-</body>
-</html>
