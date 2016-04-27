@@ -15,8 +15,8 @@ th, td {
 <h2> Taller #7 </h2>
 
 <h4>Test1 </h4>
-${test1?html?replace('\n', '<br>')}
-
+${test1?html?replace(',', '<br>')}
+ogot
 <h4>Test2 </h4>
 ${test2}
 
